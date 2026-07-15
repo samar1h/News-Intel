@@ -1,0 +1,4 @@
+{
+  "name": "dev",
+  "image": "python:3-slim"
+}
