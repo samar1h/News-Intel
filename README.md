@@ -189,6 +189,7 @@ The actual differences worth knowing about:
 - **Fully editable.** It's a small, commented Python codebase, not a black box. Categories, sources, export formats (there's already an Excel export), and filtering logic are all things you can change directly rather than requesting a feature and waiting.
 
 None of this makes it more accurate or more reliable than Google Scholar — it isn't, and that's not really the comparison being made. It's a smaller, narrower, fully-owned tool for a specific pipeline, built and maintained by one person, versus a much larger, general-purpose, battle-tested product. Different tradeoffs, not a head-to-head.
+
 ---
  
 ## Current limitations
