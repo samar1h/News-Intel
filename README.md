@@ -2,7 +2,7 @@
  
 Turn a keyword into intelligence feed.
  
-Point it at a topic — `"gene therapy"`, `"nvidia"`, `"climate change"` — give it a time window, and it fetches from multiple news sources, collapses duplicate coverage, and sorts everything into categories like funding, partnerships, regulatory updates, and product launches. No manual scanning ten tabs deep at 11pm.
+Point it at a topic — `"gene therapy"`, `"nvidia"`, `"climate change"` — give it a time window, and it fetches from multiple news sources, collapses duplicates, then sorts everything into categories like funding, partnerships, regulatory updates, and product launches. No manual scanning ten tabs deep at 11pm.
  
 Built for tracking fast-moving topics without babysitting an RSS reader.
  
@@ -11,8 +11,8 @@ Built for tracking fast-moving topics without babysitting an RSS reader.
 ## Table of Contents
 
 - [Screenshots](#screenshots)
-- [How it works](#how-it-works)
 - [Quickstart](#quickstart)
+- [How it works](#how-it-works)
 - [`fetch.py` — pulling articles](#fetchpy--pulling-articles)
 - [`classifier.py` — sorting the noise](#classifierpy--sorting-the-noise)
 - [`app.py` — the dashboard](#apppy--the-dashboard)
@@ -34,22 +34,6 @@ Built for tracking fast-moving topics without babysitting an RSS reader.
 ![Results for Gene Therapy](./screenshots/4.png)
 
 ---
-
-## How it works
- 
-Three components, one pipeline:
- 
-```
- keyword ──▶ fetch.py ──▶ classifier.py ──▶ app.py
-             (sources)     (categorize)      (view)
-```
- 
-1. **`fetch.py`** searches multiple news sources for your keyword within a date range, fuzzy-deduplicates near-identical coverage, and writes the results to JSON.
-2. **`classifier.py`** takes that JSON and sorts every article into a category, batching requests to an LLM to keep it fast and cheap rather than burning one API call per article.
-3. **`app.py`** serves it all up in a browser dashboard — search, browse by category, drill into individual articles.
-Each script also works standalone from the command line — you don't need the dashboard to use the pipeline.
- 
----
  
 ## Quickstart
  
@@ -68,6 +52,22 @@ python app.py
 ```
  
 The dashboard opens in your browser. That's it.
+
+---
+
+## How it works
+ 
+Three components, one pipeline:
+ 
+```
+ keyword ──▶ fetch.py ──▶ classifier.py ──▶ app.py
+             (sources)     (categorize)      (view)
+```
+ 
+1. **`fetch.py`** searches multiple news sources for your keyword within a date range, fuzzy-deduplicates near-identical coverage, and writes the results to JSON.
+2. **`classifier.py`** takes that JSON and sorts every article into a category, batching requests to an LLM to keep it fast and cheap rather than burning one API call per article.
+3. **`app.py`** serves it all up in a browser dashboard — search, browse by category, drill into individual articles.
+Each script also works standalone from the command line — you don't need the dashboard to use the pipeline.
  
 ---
  
@@ -176,7 +176,7 @@ A few deliberate tradeoffs worth knowing about, since they shape what this tool 
 
 ## How this compares to Google Scholar
 
-A fair question, since both tools get used for research. Short answer: they're not really the same category of tool, and this project isn't trying to be a Google Scholar replacement.
+A fair question, since both tools can be used for research. Short answer: they're not really the same category of tool, and this project isn't trying to be a Google Scholar replacement.
 
 Google Scholar is a mature, widely trusted academic search engine backed by a large engineering team, with a scale of indexing and reliability this project doesn't attempt to match. If you need scholarly citation search, that's still the right tool.
 
