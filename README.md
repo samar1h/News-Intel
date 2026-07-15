@@ -9,19 +9,32 @@ Built for tracking fast-moving topics without babysitting an RSS reader.
 ---
  
 ## Table of Contents
- 
+
+- [Screenshots](#screenshots)
 - [How it works](#how-it-works)
 - [Quickstart](#quickstart)
 - [`fetch.py` — pulling articles](#fetchpy--pulling-articles)
 - [`classifier.py` — sorting the noise](#classifierpy--sorting-the-noise)
 - [`app.py` — the dashboard](#apppy--the-dashboard)
 - [Design decisions](#design-decisions--why-it-works-this-way)
+- [How this compares to Google Scholar](#how-this-compares-to-google-scholar)
 - [Limitations](#current-limitations)
 - [Roadmap](#roadmap)
 - [License](#license)
-- [Screenshots](#screenshots)
 ---
- 
+
+## Screenshots
+### Full Dashboard
+![Full Dashboard](./screenshots/1.png)
+### Search Parameters
+![Search Parameters](./screenshots/2.png)
+### Progress Indicator
+![Progress Indicator](./screenshots/3.png)
+### Results for Gene Therapy
+![Results for Gene Therapy](./screenshots/4.png)
+
+---
+
 ## How it works
  
 Three components, one pipeline:
@@ -160,6 +173,23 @@ A few deliberate tradeoffs worth knowing about, since they shape what this tool 
 - **Fuzzy dedup over exact matching.** The same story often runs on multiple outlets with slightly different titles and ledes. A weighted similarity score (title-heavy by default) catches these near-duplicates that exact-string matching would miss.
 - **Provider fallback chain.** Classification tries Gemini first, then falls back to Groq if that fails — a single provider outage doesn't take the whole pipeline down, unless explicitly pinned with `--provider`.
 ---
+
+## How this compares to Google Scholar
+
+A fair question, since both tools get used for research. Short answer: they're not really the same category of tool, and this project isn't trying to be a Google Scholar replacement.
+
+Google Scholar is a mature, widely trusted academic search engine backed by a large engineering team, with a scale of indexing and reliability this project doesn't attempt to match. If you need scholarly citation search, that's still the right tool.
+
+What this project does instead is different: it's a small, self-contained pipeline (fetch → classify → view) currently pointed at news sources — right now that's Google News RSS, Bing News RSS, GNews, and NewsAPI, because those are the sources that happen to be wired up. Nothing about the architecture is news-specific, though; the same fetch/classify/dashboard pattern would work against other kinds of sources if someone connected them.
+
+The actual differences worth knowing about:
+
+- **Runs on your own infrastructure.** Everything stays on your machine. You can add your own data sources — including paid or internal APIs — and nothing has to leave your system.
+- **Swappable classification backend.** Classification currently runs through Gemini/Groq, but it's built to be pointed at a local model instead, so the whole pipeline can run without sending data to a third party.
+- **Fully editable.** It's a small, commented Python codebase, not a black box. Categories, sources, export formats (there's already an Excel export), and filtering logic are all things you can change directly rather than requesting a feature and waiting.
+
+None of this makes it more accurate or more reliable than Google Scholar — it isn't, and that's not really the comparison being made. It's a smaller, narrower, fully-owned tool for a specific pipeline, built and maintained by one person, versus a much larger, general-purpose, battle-tested product. Different tradeoffs, not a head-to-head.
+---
  
 ## Current limitations
  
@@ -178,15 +208,4 @@ A few deliberate tradeoffs worth knowing about, since they shape what this tool 
 ## License
  
 All rights reserved. See [`LICENSE`](./LICENSE) for terms.
- 
-## Screenshots
-### Full Dashboard
-![Full Dashboard](./screenshots/1.png)
-### Search Parameters
-![Search Parameters](./screenshots/2.png)
-### Progress Indicator
-![Progress Indicator](./screenshots/3.png)
-### Results for Gene Therapy
-![Results for Gene Therapy](./screenshots/4.png)
- 
  
