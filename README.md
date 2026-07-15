@@ -180,10 +180,13 @@ A few deliberate tradeoffs worth knowing about, since they shape what this tool 
 All rights reserved. See [`LICENSE`](./LICENSE) for terms.
  
 ## Screenshots
-
+### Full Dashboard
 ![Full Dashboard](./screenshots/1.png)
+### Search Parameters
 ![Search Parameters](./screenshots/2.png)
+### Progress Indicator
 ![Progress Indicator](./screenshots/3.png)
+### Results for Gene Therapy
 ![Results for Gene Therapy](./screenshots/4.png)
  
  
