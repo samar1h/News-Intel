@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NewsIntel{{ ' — ' + vm.query if vm else '' }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ============================================================= -->
+<!-- MASTHEAD + SEARCH FORM                                         -->
+<!-- ============================================================= -->
+<header class="masthead">
+  <div class="masthead__row">
+    <a class="wordmark" href="/" aria-label="NewsIntel home">
+      <span class="wordmark__mark">◆</span>News<span class="wordmark__accent">Intel</span>
+    </a>
+
+    <form class="searchbar" id="search-form" role="search" aria-label="Run a new pipeline search" autocomplete="off">
+      <svg class="searchbar__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+        <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input class="searchbar__input" id="query-input" name="query" type="text"
+             placeholder="Search a topic, company, or keyword…"
+             value="{{ vm.query if vm else '' }}" required maxlength="200">
+      <button class="searchbar__submit" type="submit" id="search-submit">Search</button>
+      <button class="searchbar__advanced-toggle" type="button" id="advanced-toggle" aria-expanded="false">
+        Options
+      </button>
+    </form>
+
+    <div class="masthead__meta">
+      <span class="masthead__label">Generated</span>
+      <span class="masthead__value">{{ vm.generated_at_display if vm else '—' }}</span>
+    </div>
+  </div>
+
+  <!-- Advanced options panel (collapsed by default) -->
+  <div class="advanced-panel" id="advanced-panel" hidden>
+    <div class="advanced-panel__grid">
+      <div class="field">
+        <label for="date-mode">Date range</label>
+        <select id="date-mode" name="date_mode">
+          <option value="since">Relative (last N days)</option>
+          <option value="range">Custom range</option>
+        </select>
+      </div>
+      <div class="field" id="since-field">
+        <label for="since-input">Since</label>
+        <select id="since-input" name="since">
+          <option value="1d">Last 1 day</option>
+          <option value="7d" selected>Last 7 days</option>
+          <option value="14d">Last 14 days</option>
+          <option value="1m">Last 1 month</option>
+        </select>
+      </div>
+      <div class="field" id="from-field" hidden>
+        <label for="from-date">From</label>
+        <input type="date" id="from-date" name="from_date">
+      </div>
+      <div class="field" id="to-field" hidden>
+        <label for="to-date">To</label>
+        <input type="date" id="to-date" name="to_date">
+      </div>
+      <div class="field field--wide">
+        <label>Sources</label>
+        <div class="checkbox-row">
+          <label><input type="checkbox" name="source" value="all" checked> All</label>
+          <label><input type="checkbox" name="source" value="google_news_rss"> Google News</label>
+          <label><input type="checkbox" name="source" value="bing_news_rss"> Bing News</label>
+          <label><input type="checkbox" name="source" value="newsapi"> NewsAPI</label>
+          <label><input type="checkbox" name="source" value="gnews"> GNews</label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="dedup-threshold">Dedup threshold</label>
+        <input type="number" id="dedup-threshold" name="dedup_threshold" min="0" max="100" value="75" step="1">
+      </div>
+      <div class="field">
+        <label><input type="checkbox" id="no-dedup" name="no_dedup"> Disable deduplication</label>
+      </div>
+      <div class="field">
+        <label><input type="checkbox" id="no-scrape" name="no_scrape_fallback"> Disable scrape fallback</label>
+      </div>
+      <div class="field">
+        <label for="provider">Classifier provider</label>
+        <select id="provider" name="provider">
+          <option value="">Auto (Gemini → Groq fallback)</option>
+          <option value="gemini">Gemini only</option>
+          <option value="groq">Groq only</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="masthead__row masthead__row--sub">
+    {% if vm %}
+    <div class="filter-chip">
+      <span class="filter-chip__label">Date range</span>
+      <span class="filter-chip__value">{{ vm.date_from }} → {{ vm.date_to }}</span>
+    </div>
+    <div class="filter-chip">
+      <span class="filter-chip__label">Sources</span>
+      <span class="filter-chip__value">{{ vm.requested_sources | join(', ') }}</span>
+    </div>
+    <div class="filter-chip">
+      <span class="filter-chip__label">Results</span>
+      <span class="filter-chip__value">{{ vm.article_count }} article{{ '' if vm.article_count == 1 else 's' }}</span>
+    </div>
+    {% else %}
+    <div class="masthead__note">No data loaded yet — run a search above to get started.</div>
+    {% endif %}
+
+    {% if recent_runs %}
+    <div class="runs-picker">
+      <label for="runs-select" class="filter-chip__label">Past runs</label>
+      <select id="runs-select">
+        <option value="">Select a previous run…</option>
+        {% for r in recent_runs %}
+        <option value="{{ r.path }}">{{ r.query }} · {{ r.article_count }} articles</option>
+        {% endfor %}
+      </select>
+    </div>
+    {% endif %}
+  </div>
+</header>
+
+<!-- ============================================================= -->
+<!-- PROGRESS OVERLAY (shown while a job runs)                     -->
+<!-- ============================================================= -->
+<div class="progress-overlay" id="progress-overlay" hidden>
+  <div class="progress-box">
+    <div class="progress-box__spinner" aria-hidden="true"></div>
+    <h2 class="progress-box__title" id="progress-title">Fetching articles…</h2>
+    <p class="progress-box__subtitle" id="progress-subtitle">This can take a little while depending on sources.</p>
+    <div class="progress-box__steps">
+      <span class="progress-step" id="step-fetch">Fetch</span>
+      <span class="progress-step__arrow">→</span>
+      <span class="progress-step" id="step-classify">Classify</span>
+      <span class="progress-step__arrow">→</span>
+      <span class="progress-step" id="step-done">Done</span>
+    </div>
+    <pre class="progress-box__log" id="progress-log" aria-live="polite"></pre>
+    <div class="progress-box__error" id="progress-error" hidden>
+      <strong id="progress-error-step"></strong>
+      <pre id="progress-error-message"></pre>
+    </div>
+    <button class="progress-box__cancel" id="progress-dismiss" type="button" hidden>Close</button>
+  </div>
+</div>
+
+{% if vm %}
+<!-- ============================================================= -->
+<!-- PIPELINE STATUS STRIP                                          -->
+<!-- ============================================================= -->
+<section class="pipeline-strip" aria-label="Source pipeline health">
+  <div class="pipeline-strip__inner">
+    <span class="pipeline-strip__title">Pipeline</span>
+    <div class="pipeline-strip__track">
+      {% for s in vm.sources %}
+      <div class="source-pill source-pill--{{ s.status }}" title="{{ s.error or s.status_label }}">
+        <span class="source-pill__dot"></span>
+        <span class="source-pill__name">{{ s.name }}</span>
+        <span class="source-pill__count">{{ s.article_count }}</span>
+        <span class="source-pill__duration">{{ s.duration_display }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <span class="pipeline-strip__summary">{{ vm.sources_ok_count }}/{{ vm.sources_total_count }} sources healthy</span>
+  </div>
+</section>
+
+<!-- ============================================================= -->
+<!-- MAIN LAYOUT: results (left) + analytics rail (right)          -->
+<!-- ============================================================= -->
+<div class="layout">
+
+  <main class="results">
+    <div class="results__header">
+      <div class="results__header-row">
+        <h1 class="results__title">Results for <em>{{ vm.query }}</em></h1>
+        <a class="export-btn" href="/api/export/xlsx" download title="Download these results as an Excel file">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"
+              stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Export to Excel
+        </a>
+      </div>
+      <div class="category-filters" role="tablist" aria-label="Filter by category">
+        <button class="category-filters__chip is-active" data-filter="all" type="button">All <span>{{ vm.article_count }}</span></button>
+        {% for c in vm.categories %}
+        <button class="category-filters__chip" data-filter="{{ c.name }}" type="button" style="--chip-color: {{ c.color }}">
+          {{ c.name }} <span>{{ c.count }}</span>
+        </button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <ol class="article-list">
+      {% for a in vm.articles %}
+      <li class="article-card" data-category="{{ a.category }}">
+        <div class="article-card__accent" style="background: {{ a.color }}"></div>
+        <div class="article-card__body">
+          <div class="article-card__meta">
+            <span class="article-card__domain">{{ a.domain }}</span>
+            <span class="article-card__dot">·</span>
+            <span class="article-card__time">{{ a.relative_time }}</span>
+            <span class="article-card__dot">·</span>
+            <span class="article-card__source-tag" title="Fetched via">{{ a.source }}</span>
+          </div>
+
+          <h2 class="article-card__title">
+            <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">{{ a.title }}</a>
+          </h2>
+
+          <p class="article-card__desc {{ '' if a.has_description else 'article-card__desc--empty' }}">
+            {{ a.description }}
+          </p>
+
+          <div class="article-card__footer">
+            <span class="category-badge" style="--badge-color: {{ a.color }}">{{ a.category }}</span>
+            {% for sc in a.secondary_categories %}
+            <span class="category-badge category-badge--secondary">{{ sc }}</span>
+            {% endfor %}
+
+            <span class="confidence confidence--{{ a.confidence_band }}" title="Classifier confidence">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L14.5 8.5L21 9.3L16.2 13.6L17.6 20L12 16.6L6.4 20L7.8 13.6L3 9.3L9.5 8.5L12 2Z"
+                  stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+              {{ a.confidence_pct }}%
+            </span>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+
+    {% if vm.article_count == 0 %}
+    <div class="empty-state">
+      <p>No articles in this pipeline run.</p>
+      <p class="empty-state__sub">Check the fetch step's source configuration and re-run the pipeline.</p>
+    </div>
+    {% endif %}
+  </main>
+
+  <aside class="rail">
+
+    <div class="rail__card">
+      <h3 class="rail__title">Category breakdown</h3>
+      <div class="donut-wrap">
+        <svg class="donut" viewBox="0 0 120 120" role="img" aria-label="Category distribution donut chart">
+          {% set circumference = 2 * 3.14159265 * 45 %}
+          {% set offset = 0 %}
+          <circle cx="60" cy="60" r="45" fill="none" stroke="#E5E9F0" stroke-width="16"/>
+          {% for c in vm.categories %}
+            {% set frac = c.pct / 100 %}
+            {% set dash = frac * circumference %}
+            <circle cx="60" cy="60" r="45" fill="none" stroke="{{ c.color }}" stroke-width="16"
+              stroke-dasharray="{{ dash }} {{ circumference - dash }}"
+              stroke-dashoffset="{{ -offset }}"
+              transform="rotate(-90 60 60)" />
+            {% set offset = offset + dash %}
+          {% endfor %}
+          <text x="60" y="56" text-anchor="middle" class="donut__number">{{ vm.article_count }}</text>
+          <text x="60" y="72" text-anchor="middle" class="donut__label">articles</text>
+        </svg>
+        <ul class="legend">
+          {% for c in vm.categories %}
+          <li class="legend__item">
+            <span class="legend__dot" style="background: {{ c.color }}"></span>
+            <span class="legend__name">{{ c.name }}</span>
+            <span class="legend__count">{{ c.count }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="rail__card">
+      <h3 class="rail__title">Coverage timeline</h3>
+      <div class="timeline-chart" aria-label="Articles per day">
+        {% for t in vm.timeline %}
+        <div class="timeline-bar" title="{{ t.count }} article(s) on {{ t.label }}">
+          <div class="timeline-bar__fill" style="height: {{ (t.count / vm.max_timeline_count * 100) | round(1) }}%"></div>
+          <span class="timeline-bar__label">{{ t.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="rail__card">
+      <h3 class="rail__title">Top outlets</h3>
+      <ul class="bar-list">
+        {% for domain, count in vm.top_domains %}
+        <li class="bar-list__item">
+          <span class="bar-list__name">{{ domain }}</span>
+          <div class="bar-list__track">
+            <div class="bar-list__fill" style="width: {{ (count / vm.article_count * 100) | round(1) }}%"></div>
+          </div>
+          <span class="bar-list__count">{{ count }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="rail__card rail__card--stats">
+      <h3 class="rail__title">Run stats</h3>
+      <dl class="stat-grid">
+        <div class="stat-grid__item">
+          <dt>Avg. confidence</dt>
+          <dd>{{ vm.avg_confidence }}%</dd>
+        </div>
+        <div class="stat-grid__item">
+          <dt>Sources healthy</dt>
+          <dd>{{ vm.sources_ok_count }}/{{ vm.sources_total_count }}</dd>
+        </div>
+        <div class="stat-grid__item">
+          <dt>Categories found</dt>
+          <dd>{{ vm.categories | length }}</dd>
+        </div>
+        <div class="stat-grid__item">
+          <dt>Classifier</dt>
+          <dd>{{ vm.articles[0].categorized_by if vm.articles else '—' }}</dd>
+        </div>
+      </dl>
+    </div>
+
+  </aside>
+</div>
+
+<footer class="page-footer">
+  <span>NewsIntel · fetch → classify → display · reading <code>{{ source_path }}</code></span>
+</footer>
+
+{% else %}
+<div class="layout layout--empty">
+  <div class="empty-state empty-state--full">
+    <p>No dataset is loaded.</p>
+    <p class="empty-state__sub">Run a search above, or pick a past run from the dropdown, to see results here.</p>
+  </div>
+</div>
+{% endif %}
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

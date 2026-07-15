@@ -1,0 +1,690 @@
+{
+  "query": "Gene Therapy",
+  "date_range": {
+    "from": "2026-07-08",
+    "to": "2026-07-15"
+  },
+  "requested_sources": [
+    "all"
+  ],
+  "generated_at": "2026-07-15T16:41:24.343026+00:00",
+  "summary": {
+    "sources_ok": 2,
+    "sources_failed": 0,
+    "sources_skipped": 2,
+    "total_articles": 48
+  },
+  "source_results": [
+    {
+      "name": "newsapi",
+      "status": "skipped",
+      "article_count": 0,
+      "error": "Not configured (missing required API key for 'newsapi').",
+      "duration_seconds": 0.0
+    },
+    {
+      "name": "gnews",
+      "status": "skipped",
+      "article_count": 0,
+      "error": "Not configured (missing required API key for 'gnews').",
+      "duration_seconds": 0.0
+    },
+    {
+      "name": "bing_news_rss",
+      "status": "ok",
+      "article_count": 12,
+      "error": null,
+      "duration_seconds": 2.45
+    },
+    {
+      "name": "google_news_rss",
+      "status": "ok",
+      "article_count": 100,
+      "error": null,
+      "duration_seconds": 2.935
+    }
+  ],
+  "articles": [
+    {
+      "title": "Senti Biosciences Spins Off Gene-Circuit Pipeline - AllSci",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbmpKQUZkYkhvdWFidWVTZ0JlLWF5TzNEWXYyanN3M01VQnBRWmEtVkVreXIzLVY4cnVjNjVKREpkc1NrdDIzVTdzaWJEd1hQQlBhaFBRTW9GV1dpWWUxQ2RHT2o0Q051SzRSdi1Ld0JvcnNMY21MeDdzN2ROTFUwUFZVZVl4b0h1bjdOMTh1MG1ISGxTZXY3ZkRreTB4bHNmM3JtY2h4YW80RGtZTUlyMHNfX01fNkQ4ek1KWm84OHR2WEJvTTczdkp3?oc=5",
+      "published_at": "2026-07-15T16:13:49+00:00",
+      "description": "Senti Biosciences Spins Off Gene-Circuit Pipeline AllSci",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.85,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Tau Therapy Slows Alzheimer’s Decline in First Human Trial as AAIC 2026 Wraps in London - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOV9lZ0N2eHZyN1BXNVp4b085XzJ1aS1IYkxaMGdCeU1SYUxDLXdLcFpzMG5vaGFxVUhscmMtVjNXdXJDT24yYU90TW03S2xteUdZdTFXV2paQWlPcldhcTRLOVpEY0xxc01oc2Q1UTBHT3I3Qm5KMzBqM21wbVp1UVFxd2c5YnpqUDZZTWs2YTY5VUhGeENCQUlvSFA1S09feDBpcW1SX2JUOEpkMXYxRVlZQWhzLVhJa0V5Y3pPTXFNaG1hVml3Mmhkazc?oc=5",
+      "published_at": "2026-07-15T15:50:55+00:00",
+      "description": "Tau Therapy Slows Alzheimer’s Decline in First Human Trial as AAIC 2026 Wraps in London Tech Times",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.95,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "New gene therapy platform uses the brain's own transport system to target glial cells - Drug Discovery News",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYkdBQk9QR0w1SFh0Y204U1RicEdaMVdfVndkLWU4UUdBS05naU1GWmg0NGhZNTVrTjRJa2ZDYWNHUzREVFR2QjJrSjJuM2J2c25iNDVoVlhUUVNfTE93azY3UENHT1JGRTFubmo5ZFIzVVBoMVNPQlpQNWdnbWZtWDdDNWJFVi1nUFlaaEl1YUtsbzZJcThTc1E5S1BFREhiS0tUdGdNdFBTRk95OFVuUFIyMnR0SlZvd3g0M3c1cFQ3b2M?oc=5",
+      "published_at": "2026-07-15T14:43:28+00:00",
+      "description": "New gene therapy platform uses the brain's own transport system to target glial cells Drug Discovery News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.92,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Voyager’s gene therapy reduces tau levels in AD models - BioWorld News",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdWtLNjdzeHhtVGlIcW9NZnctdXhxZFhmWXdKOXlPLWxaNHdxN2c2dTZkQUNWVjNuZlFKVmltX2x5c0RJSkwtdGJkQVBnUVQ1SUR3Z2s5S0JQRnJYV0piVTA2aTRVeHR0WDVUNmhGRmFaMjBXeXF4VGRwTWhhTDQ4c0g2NWhFRFNHNlNCY2FmMU0wVzYwM3JqOEJR?oc=5",
+      "published_at": "2026-07-15T14:31:02+00:00",
+      "description": "Voyager’s gene therapy reduces tau levels in AD models BioWorld News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.94,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "J&J axes eye disease gene therapy after key phase 2b readout - Fierce Biotech",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMFRVM1VZMk9KTHVRbTdMTTY0b014blhtSnFMZVA4dUtQOFNudGxKeW5kNG9qU2g5WE9IQ0JIMUc1aEVXR0hXMlM2cjRJZEZub0psQjRSMnNOZlpwLWstbS1YVWtVOUZUbmwtTXBMRGVPd0RNb2VYUm9ISkJ3SERoLS1BNU90NGlFSURQd3VZVkhVRjNKc0lHX2ZJRzR6dw?oc=5",
+      "published_at": "2026-07-15T14:26:53+00:00",
+      "description": "J&J axes eye disease gene therapy after key phase 2b readout Fierce Biotech",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.91,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Exclusive: Lipid nanoparticle startup Nava emerges with $89M to target T cells and kidney - Endpoints News",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWG8tLTJVazJfQTlTZEFSMGtTX2tUNmZUOXVYalVnZHprWFBxZ056XzMwemFLSmR3azBlZENodGZxdDREWVNYSGsza2tPX2xwOGJ4RWtWYnZrRHljZ1liSWpNR2IzVnBnQnhDbjN3bG1tQVZzTy05VEpVNkpjSVBhRXc4dWlHTk9oNFE?oc=5",
+      "published_at": "2026-07-15T13:00:00+00:00",
+      "description": "Exclusive: Lipid nanoparticle startup Nava emerges with $89M to target T cells and kidney Endpoints News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Funding & Investment",
+      "confidence": 0.98,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Immuneel, Tata Memorial Centre partner to advance cell and gene therapy research - BusinessLine",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPN1cyYl9rRWYyYXdTQUJHTXk1aFVBalMwRzdBY3YxOUhrb1pGVDVSeXVUbEJmYkFDNlVhdlNjUXI3dDA3a2NpYnQ1Z1F0NjRialFzcldveXFScEJKY2VRbDRsbjRHR3VnV3JtN0o0RzFEYk01TzNqZXFhTnAxRGZwSk5DVmg4RlRUcFVaQXNlQUxPSWZ2aXZpZWJpUnFhZ3FQNFRySWZTam1BRVl3MzJFTEdwMHFZdlZraFF1dENFZXpwVk5xbThTbkN6dGpKaWVDbUdTTmk0ZDZ0ZWJrdGJJM1dWONIB6gFBVV95cUxPWjJKbWRBbGRObmtublNLMFp2R1B2eEo1a3dYdnZEZFdlZ0hGYTZVYlBqdGUzNE9yZndHWlU4SkpBQzd6bXhLNFl5WThhRGNXS2QzWlpZVnB2cmVVZ1NEXzRySnZqcnVWcUlvWnlqUWt5SjhJN1FlSDJ6US0zd0lOQW5Zbmg3azZhbnN0eFp2Zk9mRjI3dTRaakFfXzlNMVkwTWJTTWtjcVdMUmRkQkluU2Z4NGZwaFNMR25OMVlLTkZCbjVtU1kwZEtjTmpCRDBIWUhkYVlWbjg5ak9qQ1AxaWZFVEVHYU5wc1E?oc=5",
+      "published_at": "2026-07-15T12:39:23+00:00",
+      "description": "Immuneel, Tata Memorial Centre partner to advance cell and gene therapy research BusinessLine",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.96,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Senti Biosciences to spin off gene therapy unit for CVR - Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdzgtVFFUNTMxYmc1VEVBRlMyaThLZjd6ZmNUZ2Nfem1fNGIyYi1qVXZqVm5QRi1OVm03M29RZmpTV1h4ZW9IejBCdm83ZFR5aW5WWlVwamVZNXpYUnNxQldfWmotQ0x2YnVuemI5LUFxTGVVMWM1QnlHVnQwLTQyYXk3U0pRc2g4bWJpcmRLdjREZFQwZV9XY2VIdzVFXzlKS0F2dmoxTXA2d00zVFlLazh3?oc=5",
+      "published_at": "2026-07-15T12:03:15+00:00",
+      "description": "Senti Biosciences to spin off gene therapy unit for CVR Investing.com",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.92,
+      "secondary_categories": [
+        "Funding & Investment"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "AI Could Give CGT Sector Deeper Manufacturing Insights and Greater Control - Genetic Engineering and Biotechnology News",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQ1NKcWVhVGhsejkyQzdCQjZzUjQtdG10WGpqTFNQLWVmOGxqdDRmWTg0SFUxenRFb3Z1ZWVNZy1KYlExc2YzWEkwa1RTSlVmUUtIMUcxOWhUaG1KN2ZFMGdRNzZkM2haaDhvMGhIZ011ZWIxcjB1SEMzT0h3b1hnRUhpNlJKWk12WjVrckhkRWRBTGlmWktUbVRUbkZpdDZWN3Uzc2duNG5nM0R2SlF0MzNtenVCdUk?oc=5",
+      "published_at": "2026-07-15T12:00:38+00:00",
+      "description": "AI Could Give CGT Sector Deeper Manufacturing Insights and Greater Control Genetic Engineering and Biotechnology News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.88,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "In vivo CAR T Industry Leaps Forward with Challenges Ahead - Genetic Engineering and Biotechnology News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWHRjSUdWLWdtRmljSTZ4cEhnUGswMzJtY0lTVExNMTlLX2FJVE5tSnEwVnl2V1R1Z05WQkRUSVRoWWpQTTAxV1VkYldNQ1FpUXBBOXNmdHgtRklWLUpmVDlsdXlEbm1wVGY3UDd4WTdXd2s5WkhuVFQ2S3Q1eU9oSWJJdFBoenlhaHpKUnVPOVlrcnNHWkRuQVNqa1JjdWFtOXNDQ2JKRGZGYm8?oc=5",
+      "published_at": "2026-07-15T12:00:29+00:00",
+      "description": "In vivo CAR T Industry Leaps Forward with Challenges Ahead Genetic Engineering and Biotechnology News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.82,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Senti Biosciences Holdings Announces Strategic Spin-Off of Gene-Circuit Pipeline and Plans Focus on Regulator Dial Platform - Quiver Quantitative",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdktjeHR6Wk1WbE9McFBQQWFWM0ZKd0JzeGFyQXgwdGpNaU9CTmxYNDdRM1hVN01HeTk3YjI0UHdELTluZWFuaWdJTlJybkhvUzZ5b2Y3aWd0SmlwSnNQUkwyeTZTanl3clJNUS0xYTVobWdCbmhWbFpidThGTEJ2RUdsXzQ1cGIxa0xwSUJpYWZVUzg4d1VyRlk2b0ZNcHlmbHRuUzA1Z18weXNnTnhNeFZsc1I2bFRpamppYWpuQllTR2E5R25zVDh0RHJBcEpOdUpDNXVHb1l1OTVxX0p1YXZ3WE95cUFUaTN1eg?oc=5",
+      "published_at": "2026-07-15T11:42:00+00:00",
+      "description": "Senti Biosciences Holdings Announces Strategic Spin-Off of Gene-Circuit Pipeline and Plans Focus on Regulator Dial Platform Quiver Quantitative",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.85,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "EpilepsyGTx selects ClearPoint Neuro technology for Phase I/IIa epilepsy gene therapy trial - Manufacturing Chemist",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZl9MSDBCSkMwN3loMFpSWU5EQWdvZWpsQ3NPN0FQdXp6NHEzcEJPQnRmd3htVU9wY2lKdjhyLV9CUDJFZ3ZyLW1LbUl1LS1ZZk5Tb0dGM0Y1X1lld0duZVJITHFSWUlsYnZrWGdXX0NDVW00YlRnRzN2aTB3WUdOYzRaSGdXN1lGenU4RkEwSGdrSEJtZXNGQkdB?oc=5",
+      "published_at": "2026-07-15T11:19:22+00:00",
+      "description": "EpilepsyGTx selects ClearPoint Neuro technology for Phase I/IIa epilepsy gene therapy trial Manufacturing Chemist",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.95,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Surviving CGT's Funding Winter - The Medicine Maker",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTENsUV9SQjVDWFBSYlp2YkJiVHdUeEU4eEFLbXEwLXRGN2FObGFQeTZ1eVdXY2tpQ0hGazdLdFQ3M0xRY3JEUXh2Skdhejh6cEFyVWExemVOZW5tRk5RSDJNNDhxbzRRTGpyQnVNblFrYmZvOGRvMV85UUUzLU1fTWtFUkU5OUIyZTM4eHJR?oc=5",
+      "published_at": "2026-07-15T10:57:29+00:00",
+      "description": "Surviving CGT's Funding Winter The Medicine Maker",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Funding & Investment",
+      "confidence": 0.92,
+      "secondary_categories": [
+        "Market & Competitive Moves"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "The NHS cold chain is about to be stress-tested by a new medicine - Institution of Mechanical Engineers - IMechE",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZWhQaW5CclE0WXVEZWlpeFo3QXYyZmdlRjVtZDNXN3dTbXB5SVd4OGtFVEF3Tm1fRVFsdm5tYzJUbUVhVk5DdlZScjBQVERDTVliTlloaGVIS1YwdHp3X05uTVNMcUlUeEpRd0lSVGRQajNZaFJPQ3RoN0ZacENCVWhpVjVjejBCNUhIb0tNZDVBSHZGeHNuYXgyQjZzV0xhb2d4ODZiMlNiUQ?oc=5",
+      "published_at": "2026-07-15T09:58:36+00:00",
+      "description": "The NHS cold chain is about to be stress-tested by a new medicine Institution of Mechanical Engineers - IMechE",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.65,
+      "secondary_categories": [
+        "Regulatory & Policy"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Gene Therapy’s Future Will Be Won on the Manufacturing Floor - BioSpectrum Asia",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQm1MM3o5WmNlU3g1Y0ZOX0FPLWFSSmVpQXFNMFE1LWJUSGNkZVNtQkZfeWRGV2R3OTJoc01Wd2NiUDcyc3k1QzBzZ09nU2ZjbURoNTZUTFRkd01QM3JCanYwa2dnX0pPdEduZkhzaVBseU9jZGxHMlFaNkFCMktaSVJicERHNmJEZlQ1bl9vdnhDUF9TdV9GQ1AyVnBqVkRXdlp4cG11djdsa09VZHNJRFhnVQ?oc=5",
+      "published_at": "2026-07-15T06:06:34+00:00",
+      "description": "Gene Therapy’s Future Will Be Won on the Manufacturing Floor BioSpectrum Asia",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.75,
+      "secondary_categories": [
+        "Market & Competitive Moves"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Experimental gene therapy reverses fragile X symptoms in mice - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOWTZndEQzWjVQOHh2WGQxMFBsbURkVmVma0JhNURNYUd2TEh3R2JEcTNCeTB5djJ2Q2RKeFVOTzJqS1YtT3NjenFuOXFrUEJtUnZwOHJPMEJYZzRfeDhCb2pGUVJoSnU0aTJRZHNtdC1VT3pYTFBOVXQ3a2s0NmIzYkwwOGF1REVTN3pSQ1VTeDJYRmo0Y2hueW9tMER0bGJpMUhwUHRFRTdyb0c0WHc?oc=5",
+      "published_at": "2026-07-15T03:02:00+00:00",
+      "description": "Experimental gene therapy reverses fragile X symptoms in mice News-Medical",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.98,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Gene Therapy Reverses Fragile X Traits in Preclinical Study - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVzVsUXhHR3lPVHFmZDVOOWpUaU9fWTRzTU5YVFFVcmpfZ21VTGYxNlBmNS1lSTVnaF83RU4tclYtNWlDR2lReDczR2VjNVI5YXgtcW1rd0tuZndoTEJQRWFQVzNrXzRIRTZoZmNuRTByeU5tc0ZyUUJTLUNPeEEydldLNmVDS0l6M1d2SQ?oc=5",
+      "published_at": "2026-07-15T01:44:12+00:00",
+      "description": "Gene Therapy Reverses Fragile X Traits in Preclinical Study Bioengineer.org",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.98,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "The Inquiry | Are we closer to gene therapy for sickle cell disease being accessible? - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tb21OTmgzXzZCZ0RQbTZPVzhiRmltTE52WmNEVWVDOUh5Q1pBWEMwMkNsRVVYQ0o3bUtNM0J2cklRVTBXZVZTb1JZeGhUZlQ2?oc=5",
+      "published_at": "2026-07-15T00:17:48+00:00",
+      "description": "The Inquiry | Are we closer to gene therapy for sickle cell disease being accessible? BBC",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Regulatory & Policy",
+      "confidence": 0.78,
+      "secondary_categories": [
+        "Market & Competitive Moves"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Immuneel, Tata Memorial Centre partner to advance cell and gene therapy research",
+      "url": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6a57b8333abb49248f86cd0104260547&url=https%3a%2f%2fwww.thehindubusinessline.com%2fnews%2fscience%2fimmuneel-tata-memorial-centre-partner-to-advance-cell-and-gene-therapy-research%2farticle71225302.ece&c=4295178152332340377&mkt=en-in",
+      "published_at": "2026-07-14T23:10:00+00:00",
+      "description": "Among the first projects identified under the partnership is a Phase 2 extension study evaluating the safety and efficacy of IMN-003A cell therapy in adult and paediatric patients with relapsed or ref ...",
+      "description_source": "feed",
+      "source": "bing_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.96,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Voyager's AAV Gene Therapy VY1706 Shows Sustained Tau Reduction in 6-Month Primate Study - BioPharm International",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPa1l5bEJmRmhQa2RZSm1HS016R01ycDctbG5aODJneV84bDc3ZjNxOU11eWo3blZ5N1A5MGx3bEd3TVdkamtIWmh4LXdTcGZRUWMyUzlSb0NMZmtrMWl2MjIxQ1hPWk5lYnlVZ2N5cFBMbVNIM0YweVFLN0xFeE1UZXlKdG8ybW5qdkdQd0FlV3FwUENpZl8wd1YyeTdsTlQxNU1IMXc1MmNsUWNVSWJkQUhwYTZ0emRaSXFIMXpTSmhGUDJMTlVCQzRYbw?oc=5",
+      "published_at": "2026-07-14T17:01:15+00:00",
+      "description": "Voyager's AAV Gene Therapy VY1706 Shows Sustained Tau Reduction in 6-Month Primate Study BioPharm International",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.95,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Lyora Therapeutics Launches With Seed Funding to Advance Genetic Eye Disease Therapies - citybiz",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbDFackRvNnBVVVJ3TEhNMXRUVFZZc0RuMTQtOVZxTTlqaDM1cV9aYkZSUXVJOGFYWnFtMWJZdmlmYTBKMmRGNFFzSjloQk1ZcFhPb29Uay1yakp3U2NYLTJKN3FpSF90bVZNTUJ6M1RlZmJsX05oNXlEdUp2dkEwdVFDcWNUbHZ2V3RBaXpaMFVFU3BaVzZMWno2Qk1KQ3NHbXA2aUlMN2lRYlVBVVhZRXBzbmRUcDY0SHVmRzFwY2JjNEU?oc=5",
+      "published_at": "2026-07-14T16:29:28+00:00",
+      "description": "Lyora Therapeutics Launches With Seed Funding to Advance Genetic Eye Disease Therapies citybiz",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Funding & Investment",
+      "confidence": 0.98,
+      "secondary_categories": [
+        "Product Launches"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "VY1706 Alzheimer's Therapy Clears Safety Test - AllSci",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVF9IQW5Ec2hzMFg2ekk3MGZpdmlSd1BHd0E2cGlOMnRyek1xdjlOLWt5X1J4T0ZHb3JZdzNHX2phMGswZE1hVm9vVXJ5TVRJTVRMU2IyeFl3eWoxeF9oU1NzWVRGTmhqZFBmelRBQ2ctaURGMDNRQ19WMHROVzljb2pQOW5VQWVnZzVOejdNWmhveDJGQkhIRFg3UkVTVnZ2VjV1NG1IU3dGeUtseDB0bURFWEw5X3VoeG5hTEFjSTVqRVNsZ0VXYzFsWVRKRjBS?oc=5",
+      "published_at": "2026-07-14T14:57:52+00:00",
+      "description": "VY1706 Alzheimer's Therapy Clears Safety Test AllSci",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.92,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Ocugen licenses gene therapy to Roots Pharmaceutica - BioXconomy",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNW8tZkt3eWRQMWdhTVRfalphdGJSZWJEY1lwRHVJM1JBZWhBVXNxeGNGWlVQeGhKd3QwSUJtNnNBWXlIRWwzSkM3LW51LUJCV09na0FjX3FpN3JGZHlEbmNkOU1icUJnMFZ4MnBnbXh1SjVYSDMyMElqaGxQaTZJTWZmYnZqd3pzZHdxcmhtOUlQWXFsNGw1YWhpOXcxcVpFNFBJNWNNU183QlE?oc=5",
+      "published_at": "2026-07-14T11:13:49+00:00",
+      "description": "Ocugen licenses gene therapy to Roots Pharmaceutica BioXconomy",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.95,
+      "secondary_categories": [
+        "Market & Competitive Moves"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Exclusive: Genetic medicine startup launches to speed programs that stalled at Editas, Biogen - Endpoints News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQc2t0VUNuNTBHTjdJbi13VnhyTjIxbnUzV3hqeXRCZ1NWSmxGUkJnQ21zMHhIS3l6MDJTTmhfNlZmVkVoS2t2Mnhyb0ViZmp0U3pmYV92eElUWkFxeUpOYkRaUXBFVndkM0RnUk5xczZ2T0dKN0Z6OHdtaVNma0pYWXE1QVo1emozY1JuclRUWnBWS0c2cXp4aE9SSF9xSXpo?oc=5",
+      "published_at": "2026-07-14T11:00:00+00:00",
+      "description": "Exclusive: Genetic medicine startup launches to speed programs that stalled at Editas, Biogen Endpoints News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Product Launches",
+      "confidence": 0.88,
+      "secondary_categories": [
+        "Market & Competitive Moves"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "EpilepsyGTx partners with ClearPoint Neuro to support targeted delivery of lead gene therapy in epilepsy - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxORURNVTJIRWdvTEs5WEh0bUlOcXFQUzRtZGJ6eUIzWU1Hb2t2SUF6bDBFSEh4SkF5OHVwUWlkN1VPeWhYQ1hpT2RfRnRYaGg0bHBub2tKMkNWZlVjRGg1azJtRHhzUlhjbHo0RVloajVZQ1ZjREM1NjgwS3pGM3RtbmhjVVVqQ1ZkcUJRWnFSYVVWZmZDNzZVU3ZRR1pqcGpVSFVCU3pGZGkxeXdzdHZtRUxlYWg2WDZEZjdDLTdHaGttUVJyREpIekN3VEc3R2ptSFRDV1hjMDdqa1IxQkdscmhRWWdmYmc?oc=5",
+      "published_at": "2026-07-14T10:30:00+00:00",
+      "description": "EpilepsyGTx partners with ClearPoint Neuro to support targeted delivery of lead gene therapy in epilepsy News-Medical",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.96,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "FDA approves Nashville doctor's potential cure for sickle cell disease - The Tennessean",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaEFlUGVDV2FCd09aNXU2UEN2bVJQYkUzd25vU2pkdEZ2QWV6Q1RZdy1USVYxbkw3TGpIOHRPMVJ3ZWxiTVNrS3E3YUU3ck5obHUxUjdYdWhvRml1ZFo3LTAzUVRQRkhUakRIa20wNXZsOXROVmhEZ0ZVb0x0bE9mMFdNOEV3MXRqZjRGb2UwN2ExME55SGNzeVRVVV93Vkw3cXZ6bUJZV0N6aEpsSnBUZDR6Y282SWZNN0xHMzR0MENFMzQ?oc=5",
+      "published_at": "2026-07-14T10:02:00+00:00",
+      "description": "FDA approves Nashville doctor's potential cure for sickle cell disease The Tennessean",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Regulatory & Policy",
+      "confidence": 0.95,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Digital process development for cell and gene therapy - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcnl2SXk3eDVnb3RuV1UxelF0djFpdUkwNFBRVjNjNEM2cnF4VnhFRGFsQ2pPOFc1ZVZ6Yko3TWZ4Ql9leUx4SkhtQ1JYc2tJRjJ5UkJ1WHVpc3VLWThldFAxN0ZWZ3RWLURmOEVpcmtBa1RYMm5oUFZBSEEzV1NqM0Q5TkMtcS1ZMUZ6cnlhbFpCcWhTUG5vb1BIWmctdlRWNFFlTkR4dlA2MWM?oc=5",
+      "published_at": "2026-07-14T09:35:00+00:00",
+      "description": "Digital process development for cell and gene therapy News-Medical",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.94,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Gene therapies, early detection, and GLP-1 drugs are reshaping enterprise healthcare procurement - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMHRNakw2c01DQ3VSWldjWmU1eG94cjJ0VFZZT2J3LWdEM1hXaC12WGlnQVdoWTd0eVFMY0pwVVVQdWo0WXBLeE9wS1Nhbks2VHpMVHhManFnZFBWblNMNTlEZF9hMjlZQXlHRGVETGNudFpyMWprVkc5aFlxT3k4MlN6dHRRLUIzdFlfNDNJMFdqR0RGT3Z0T19DS0J4TkJJNmduUV9wMGptT0lZTFFHd21GdlQwcWJDSmNmQnlJcS1yT1dSOTloWDE5VEJqY2l2aHNQeWdhSkRiZEJI?oc=5",
+      "published_at": "2026-07-14T09:12:02+00:00",
+      "description": "Gene therapies, early detection, and GLP-1 drugs are reshaping enterprise healthcare procurement MarketScale",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.85,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Learning from the last decade of gene therapies - Drug Discovery News",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOU1RUWkdITWZ6VGp2eXpXMGY2THd6aGJBSGJ6S1p5YVA1TGJJZDVITS11b2lRUDFDNUF6VVdOSDh4Z0dHNHlOTEVxQzZjNzdlQ0FURExnQ3BXN2J4WlR0YmZmY1JvcGdBRnVpa2ZEXzVEY3FjcmZvRjJ1a1IxWXI1ZmpkQlBMamFLYjExMDJoaEs?oc=5",
+      "published_at": "2026-07-13T22:48:01+00:00",
+      "description": "Learning from the last decade of gene therapies Drug Discovery News",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.82,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Toward Equitable Access to Cell and Gene Therapies: Rethinking Co-Payments - The American Journal of Managed Care® (AJMC®)",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQai1VM1dxTVdSSUUtcEdkb0RSeGMyQ1VoemZxZHVZSDRDZDRjbGdvTlBMSFZvQ3Atd2hIV1JYdVJud1NyUXB2M2tDWXB2VW4zYm1PMXFWRkRZS0lyZVktUE9Zc2Z4R1d2Y1V5Z1NTUldOQ3lXSFI5OTVPakxmQjJBRHlUVW1qbWU4QVRBcVdBTl9TaXBYa2YzRmQxa1d2MTJ5?oc=5",
+      "published_at": "2026-07-13T21:05:22+00:00",
+      "description": "Toward Equitable Access to Cell and Gene Therapies: Rethinking Co-Payments The American Journal of Managed Care® (AJMC®)",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Regulatory & Policy",
+      "confidence": 0.89,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "VY1706 for Treatment of Alzheimer Disease Shows Tau Reductions and Favorable Tolerability - Psychiatric Times",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeks0NGp0anVmaG9wMmlmQmNkakoyTzkxZTYtZUhEOXJRVTBtRnFxcUh6QW9NYnhmRjFtOHFHb1pKNTNIMlg3LXdDc2ZtVnVOVFM3SmZGSHNGUnBzQ3NITHR5VW4yUGNTLV9CRUp2S0dGcWdDUVBCUUJpeTVIdWNFcThPRFpQSG5nZDRIbHRsWHlXemc3aVFCUEFjUW1VWElRYzZoMHBVbkVHcmloMklsdzdrX0otYWRPUHl2UXZmTHFWV2tpeHc?oc=5",
+      "published_at": "2026-07-13T17:39:12+00:00",
+      "description": "VY1706 for Treatment of Alzheimer Disease Shows Tau Reductions and Favorable Tolerability Psychiatric Times",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.95,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Malvern's Ocugen strikes up to $255M licensing deal - The Business Journals",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOa0xWejBwX0tqUHNOSDVoSTVfWExjaldHR0h1ajlFNGpHcHdva2tLZDg1b0ZIR1dYZW05Z0RldDBWR090NDFrWnBnWm5Tc0FxVzNURjA1YjIxdjNlblpYS2JHU3I2bFp3d1VZMXVZblJoS25BbWpfQlV4TDZxV09ZS2NWcDZVa19veHFoQzlwQ3pCdGlQOW5pSUcwZHJNUXRzUERvWDlIWllmOUVBVnc?oc=5",
+      "published_at": "2026-07-13T17:22:00+00:00",
+      "description": "Malvern's Ocugen strikes up to $255M licensing deal The Business Journals",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.98,
+      "secondary_categories": [
+        "Funding & Investment"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Longevity Gene Therapy Holds in Aged Dogs: Pfizer COVID Vaccine LNP Partner Backs SIRT6 Platform - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdjlrRWRkVEV6YXkwaU5LZ3A0WlpKNTFHVGJMZ0NJMEhJWVF6V29zZ1dKVGVOZ183ZEVKV044S1IzcnNlYy0xaExManFWaEJMWTQxbVMtOVVmTDVzLTFndnlyWW4xdVBnWklpR2ZiSnZHZ3dxOWVJalBVdnZ6eXFUUUN3XzVvZ3NYVWpzSE9Ca2ZKMm84NVNZc0ZzQ29ZZEJ5N2F6SnJvVmpTREZIYzVIZENUVVRudWhrbjZtRDJ2c1IycDBCTDZhQVdUMnlMcHNGb0pOOHdadDRwUDZ6RExtRg?oc=5",
+      "published_at": "2026-07-13T15:06:11+00:00",
+      "description": "Longevity Gene Therapy Holds in Aged Dogs: Pfizer COVID Vaccine LNP Partner Backs SIRT6 Platform Tech Times",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Funding & Investment",
+      "confidence": 0.85,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Ocugen, Inc. Announces Binding Term Sheet with Roots Pharmaceutical to License OCU400 Modifier Gene Therapy for Retinitis Pigmentosa in the Middle East and North Africa - Ocugen, Inc.",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQWRwQzJaR3JiM0R6NlNRQU4zRHg0eTBPOGJZSHpZdG5BdjJrcUZlVjdrTmhmNm5iOUhLOUtmZUJRTGJXQ1Y5Q281TmdJVk9sWDV4RUR3MVM5bkszWHViNDVtVld4WDFBbzhMWERuU1VwZnBLUEFZUE9HazI1azRWSmhnendlc2VXMG9PeDd4MGQwYXUzejF0blpWYWdkRzluYzZBajhJTC1kaEthNjJuRFlieEp0dGJz?oc=5",
+      "published_at": "2026-07-13T14:48:45+00:00",
+      "description": "Ocugen, Inc. Announces Binding Term Sheet with Roots Pharmaceutical to License OCU400 Modifier Gene Therapy for Retinitis Pigmentosa in the Middle East and North Africa Ocugen, Inc.",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.99,
+      "secondary_categories": [
+        "Product Launches"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Ocugen signs term sheet for OCU400 gene therapy in MENA region - Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNQ3dNZDQydzZkQlZDbm5TNjJXRXNFSUtUUEdLUUF0cGpkYUl5NWFWbHh4UzBDWWVRbk5ldnp3QVpCQUlVMlV5SGhGZ29lcXdsWWdjdTZRRzB5U3lIb0xSQnJ3Q0kzOHlXWTJMQloxSktOOHNSSi1zeGt1SWxBcDFQeDBfTjQ3ZElxY1c3ZnNzZTlXbmgzYldIOW1HeUxzYjhTRmFfSGZsR1JTQnllUUdKTUN3a1lEdFRTN1JR?oc=5",
+      "published_at": "2026-07-13T11:17:31+00:00",
+      "description": "Ocugen signs term sheet for OCU400 gene therapy in MENA region Investing.com",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.99,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Gene therapy for inherited blindness set for MENA launch under Ocugen–Roots pact - Stock Titan",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOUg5LWVCMkRTN3NmSGxIemZmd2JrRnVJZW14aGVCai1BM25UYjVNaXZuYmxpNGpaTGFTTnpsYzVIeFo3em5MSkNfZmhCdGlMTjNVa2s3bW52eXRiajJORHJueXdncmdiZmdvWDlfby1od2pNOGlOSWQ0OVlRY0lsN3pmNnZ2bVZRNUtWalFZV3k5d1hCVVNtQVh4cXcyakFGa1l1UVdGWVYybHVTTlRKSkN2Q1lYSzN3b0M0RHNSNUs?oc=5",
+      "published_at": "2026-07-13T11:02:00+00:00",
+      "description": "Gene therapy for inherited blindness set for MENA launch under Ocugen–Roots pact Stock Titan",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Partnerships & Alliances",
+      "confidence": 0.98,
+      "secondary_categories": [
+        "Product Launches"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "This Biotech Lets Rare-Disease Families Invest In Its Gene Therapy - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRVJZLTNrTnJkWV9BRnRHR3c3TS1GSjdUY0ZRTHhQU3dPMU5UMHFQQzVtYWFZcDViajlwZGRwQmx6UFotLXJOaDBiZ3pmT3d5ZDhiU0g2SlF6YS1VRXFpaFNiVmU1ZjFXVE1QT3k1Y290TEpOVDNQSjhtbnktNDNTYVY4NTdqZ1Q3c3VqQmpYVEpwZlBlUjlMOXBnUWdzY0xIS0w2R2lCNGFQNThsYVNGdVhhR3VlclR1ODYw?oc=5",
+      "published_at": "2026-07-13T11:00:00+00:00",
+      "description": "This Biotech Lets Rare-Disease Families Invest In Its Gene Therapy Forbes",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Funding & Investment",
+      "confidence": 0.92,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "This Week’s CGT News: Radiopharmaceutical Boosts CAR T - The Medicine Maker",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOYzdidmZzTC1OSG1yc1JiRzFRTG0xMnJPbllKOHpYc0ZsX2VCT0NZYld4d0tJRVlEb2czdmhKNW1MRFBKU2hLb2RpTVlzNTVSZ3liSjZLaGVCaXF3RWhiUU9LblQ0S29lenBpclNTY3RVN2N1d2tDR1V4TkxWWXR3SHpEUF9yRzlkQzNWMll6Y19KNzZfU1h1RXFfbk9YMG5uUkZ1MG9HUG5uc0NtSlE?oc=5",
+      "published_at": "2026-07-13T09:09:57+00:00",
+      "description": "This Week’s CGT News: Radiopharmaceutical Boosts CAR T The Medicine Maker",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.88,
+      "secondary_categories": [
+        "Market & Competitive Moves"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "World-first gene therapy to target rare immune disorder - Healthcare Today",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRi0tSExEcGdQaV9rYmNvM1pmWWpLQmpjMlU0aWQ3QzdRLWkxc0dZMUtKVGI3Zzl3TGVmRVZHalJ3cm5OX3RJb1FVTEpMZUdrak5obl9YeVZESENSY2pqNWcxQ3lOd1JKLUxyNWx0d1FaekJoaU1sY2xwdEs0djQ4S2JiLU9ieFpyeHJ4MDBWb29nZk5UWXc?oc=5",
+      "published_at": "2026-07-13T05:12:51+00:00",
+      "description": "World-first gene therapy to target rare immune disorder Healthcare Today",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Product Launches",
+      "confidence": 0.85,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Gene Therapy for Lipid Management: Dawn of a New Era - Cureus",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeHhKbGJhWnRwYl9hSm5nb1dPbUU3MmYyUGxVeExpRENFSzFhR3NHUTNYUFhhLUNob3FXcTE1ZlFpczJxYXktNlpPYl90all4MXcxZnZkUHRwY2IzRVFpOXRRRWlvR1VsbkVQb1B2d3Y0Q29aY2VnNlNCaDFOSXlteU81U0YxRlIxNXpNZWduWjk0bExf?oc=5",
+      "published_at": "2026-07-12T05:46:48+00:00",
+      "description": "Gene Therapy for Lipid Management: Dawn of a New Era Cureus",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.92,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "How Gene Therapy Can Treat Diseases - Encyclopedia Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQam11ZUlhV2JKdVVvdE1BSUxxLWhWSzJkekt3ZHBMYXRTLVVRRm05b0wxU013c3pLeTZqQWZpWDd1bzJLWm9MNVZkWTNqQ2NFbVQxTXRieEdTb0VxZWFMYkxvUW5yb2RlWDJvdy1vbG5mamsxT2JpWkRVSXRWSUNNYkJKalMxUmhHc2c?oc=5",
+      "published_at": "2026-07-12T05:00:00+00:00",
+      "description": "How Gene Therapy Can Treat Diseases Encyclopedia Britannica",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.95,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "FMR1 gene therapy restores translationally relevant phenotypes in a mouse model for fragile X syndrome - Nature",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1FQVJnZ0gtS2cyTTVNenJ0M1QxS3pRZlVKenowbi16VG1YbFV3Vm1Cb0tMRWJOM01kSW9LUy1sZFlXVzN4SVR5ajFXaGFPczg3MmFPenFkd2NtVzVmZXBJ?oc=5",
+      "published_at": "2026-07-10T17:26:43+00:00",
+      "description": "FMR1 gene therapy restores translationally relevant phenotypes in a mouse model for fragile X syndrome Nature",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.98,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Feds award $43 million to Philly gene therapy research to advance treatments for rare diseases - Inquirer.com",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOb1hSMkZhSG9raGNNNHJUN2hHQ2k2c0FjSm0zVW9SWXFST2JHWnhvUzdac01mM1BDQ0F0Q24waC1oY2RyS040Z3JKNkNXNTlOckFjVWZxUHlWdmhCRXZaRU1qSFBRdlRGRGlqaGlpejd0YnJlenpxSWx1MDFtc0lTM3dDME55TGlEbG9ITERTY2hmaWFnc1BIbWhua3UtTnJfQWtsa0QzbnhOaDBvd0tzSUFiNzhZYXpYdFNMdG9SekEyb2lEcjRXOVN3?oc=5",
+      "published_at": "2026-07-10T15:39:20+00:00",
+      "description": "Feds award $43 million to Philly gene therapy research to advance treatments for rare diseases Inquirer.com",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Funding & Investment",
+      "confidence": 0.92,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Roche ends Huntington’s gene-silencing programs - STAT",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPa2hHR2x4WkFzbWxJb2xiOHdFLS1Eb0VUOVdla2VHZ0N0QjdpS1hvX1lianRoZ1lQWDhDaVI0aXhlVG5SQ3I4aUVuSjFCMUgwSXI4SHFDUVlTTXNPZjU0bDVxeFJ6U3k1ZUZ6d0xJc05Id1FwZkRBek9GVGVMR1lIV1N3bFV1STBXUUFrLTd6ZmtmVHNUSnFaNWJ4QQ?oc=5",
+      "published_at": "2026-07-10T13:37:14+00:00",
+      "description": "Roche ends Huntington’s gene-silencing programs STAT",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.94,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Virginia budget expands Medicaid access to sickle cell gene therapy - VPM",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdHNJUVFFckd0SldXbUNHMnhpMnJtcFpNRmNsOUZtWlNnZHNnR0ZuY0l5YzU1VWFxQ3p1WmpZc1FabWZjTU9pcm1qaVVCZE1DRUkxRFBSR3RJTE1wQ0VOakRTNUREcUctTVdORmtuQ29QYWFER2xyOWZWaHZkUWE3STBOYk9nd3dSTXlXS3BUX25wMGNkUXFMNjRxSVJKNFdBeEsxbW42aG1IYkRMN1BV?oc=5",
+      "published_at": "2026-07-09T15:11:00+00:00",
+      "description": "Virginia budget expands Medicaid access to sickle cell gene therapy VPM",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Regulatory & Policy",
+      "confidence": 0.96,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "Gene Therapy Is Changing How We Treat Disease Innovatively - hospitalnews.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQS05dEo3NDlza21BRkpkSFVGY1VzRGltSXJjWUVWRUdCZW9RZkNZWkZhRENuUE5rdWFIOHlhel94QnhaVHVQNnp5X0MtN0Q1LURTblZjY3dqX2VHVU1VbzJrZU52MmZ5dWdnRndpcDU1bmFTbWdEZlZtbUVjVXAtSg?oc=5",
+      "published_at": "2026-07-09T12:02:59+00:00",
+      "description": "Gene Therapy Is Changing How We Treat Disease Innovatively hospitalnews.com",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.85,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "A second chance for gene therapy to restore natural hearing - Nature",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tUWNBdndyRzdabUZtWkE5cFBZNHZlZERtR3ZQdnVXajUyeDhCR1U1X2hfbzNFMWRMOGJ0OU1pcmUxT0lCTjlxZEVPVU4xV0RJc01lbFl0ZWZIYmtidURZ?oc=5",
+      "published_at": "2026-07-09T09:23:33+00:00",
+      "description": "A second chance for gene therapy to restore natural hearing Nature",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Research & Technology",
+      "confidence": 0.95,
+      "secondary_categories": [],
+      "categorized_by": "gemini"
+    },
+    {
+      "title": "The future of cell & gene therapy: Key trends to watch - Labiotech.eu",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBVN1pIWmVKc0c5dlcteVJhMUNDNWFHUXNWdE1mTFd0SUhHM0IzNFlfMmR3eDh6WHcyM1MxOGlZYXNyWmUzcExUZG1hNzMtMFJHOWJ2b0xjazZHb2Z4VS12cVJNOVNQQXdDd1lB?oc=5",
+      "published_at": "2026-07-09T07:00:00+00:00",
+      "description": "The future of cell & gene therapy: Key trends to watch Labiotech.eu",
+      "description_source": "feed",
+      "source": "google_news_rss",
+      "category": "Market & Competitive Moves",
+      "confidence": 0.88,
+      "secondary_categories": [
+        "Research & Technology"
+      ],
+      "categorized_by": "gemini"
+    }
+  ],
+  "classification_meta": {
+    "categories_used": [
+      "Funding & Investment",
+      "Partnerships & Alliances",
+      "Regulatory & Policy",
+      "Product Launches",
+      "Market & Competitive Moves",
+      "Leadership & Talent",
+      "Research & Technology"
+    ],
+    "batch_size": 10,
+    "description_limit": 500
+  }
+}
