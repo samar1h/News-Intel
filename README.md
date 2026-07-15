@@ -181,9 +181,9 @@ All rights reserved. See [`LICENSE`](./LICENSE) for terms.
  
 ## Screenshots
 
-[Full Dashboard](./screenshots/1.png)
-[Search Parameters](./screenshots/2.png)
-[Progress Indicator](./screenshots/3.png)
-[Results for Gene Therapy](./screenshots/4.png)
+![Full Dashboard](./screenshots/1.png)
+![Search Parameters](./screenshots/2.png)
+![Progress Indicator](./screenshots/3.png)
+![Results for Gene Therapy](./screenshots/4.png)
  
  
